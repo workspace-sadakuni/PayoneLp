@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*
+foundation/_variables
+*/
+@font-face {
+  font-family: "Noto Sans JP", sans-serif;
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Bold.otf") format("opentype");
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Regular.otf") format("opentype");
+}
+/*
+foundation/_mixin
+*/
+/*ブレイクポイント*/
+/* font-size rem */
+/*
+object/project/_thanks
+*/
+.p-thanks {
+  padding-bottom: 80px;
+  margin-top: 32px;
+  background-color: #fce6cc;
+}
+/*@media screen and (min-width: 541px) {
+  .p-thanks {
+    padding-bottom: 440px;
+  }
+}*/
+
+.thanks-btn {
+    margin: 0 auto;
+    display: block;
+    padding: 8px 0;
+    width: 280px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ff4400;
+    border-radius: 8px;
+}
+
+.mb-5{margin-bottom:2.5rem!important}
+
+@media screen and (min-width: 1025px) {
+  .p-thanks {
+    margin-top: 56px;
+  }
+}
+.p-thanks .c-heading_ja {
+  line-height: 1.4;
+}
+.p-thanks_text {
+  margin-top: 40px;
+}
+.p-thanks_text .c-text {
+  margin-top: 16px;
+}
+@media screen and (min-width: 541px) {
+  .p-thanks_text .c-text {
+    text-align: center;
+  }
+}
+

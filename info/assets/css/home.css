@@ -1,0 +1,532 @@
+@charset "UTF-8";
+/*
+foundation/_variables
+*/
+@font-face {
+  font-family: "Noto Sans JP", sans-serif;
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Bold.otf") format("opentype");
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Regular.otf") format("opentype");
+}
+/*
+foundation/_mixin
+*/
+/*ブレイクポイント*/
+/* font-size rem */
+/*
+object/project/_main-visual
+*/
+.p-mv {
+  padding-top: 50px;
+  width: 100%;
+  height: 667px;
+  background-color: #f5a20a;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 541px) {
+  .p-mv {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv {
+    height: 800px;
+  }
+}
+.p-mv_copy {
+  margin-top: 38px;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0px 3px 20px rgba(68, 68, 68, 0.2);
+}
+@media screen and (min-width: 541px) {
+  .p-mv_copy {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv_copy {
+    margin-top: 68px;
+    font-size: 3.2rem;
+  }
+}
+.p-mv_copy span {
+  font-size: 2.8rem;
+  line-height: 1.4;
+}
+@media screen and (min-width: 541px) {
+  .p-mv_copy span {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv_copy span {
+    font-size: 5.6rem;
+  }
+}
+.p-mv_nega01 {
+  width: 1080px;
+  position: absolute;
+  top: 120px;
+  left: 63%;
+  -webkit-transform: rotate(-10deg) translateX(-50%);
+          transform: rotate(-10deg) translateX(-50%);
+}
+@media screen and (min-width: 541px) {
+  .p-mv_nega01 {
+    width: 1200px;
+    top: 160px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv_nega01 {
+    width: 1940px;
+    top: 260px;
+    left: 50%;
+    -webkit-transform: rotate(-7deg) translate(-50%, -50%);
+            transform: rotate(-7deg) translate(-50%, -50%);
+  }
+}
+.p-mv_nega02 {
+  width: 1080px;
+  position: absolute;
+  top: 520px;
+  left: 62%;
+  -webkit-transform: rotate(10deg) translateX(-50%);
+          transform: rotate(10deg) translateX(-50%);
+}
+@media screen and (min-width: 541px) {
+  .p-mv_nega02 {
+    width: 1200px;
+    top: 800px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv_nega02 {
+    width: 1940px;
+    top: 800px;
+    left: 48%;
+    -webkit-transform: rotate(7deg) translate(-50%, -50%);
+            transform: rotate(7deg) translate(-50%, -50%);
+  }
+}
+.p-mv_mock-up {
+  width: 1040px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (min-width: 541px) {
+  .p-mv_mock-up {
+    width: 1400px;
+    top: auto;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-mv_mock-up {
+    width: 1120px;
+  }
+}
+
+/*
+object/project/_button
+*/
+.p-floating {
+  position: relative;
+  z-index: 101;
+  cursor: pointer;
+}
+.p-floating::before {
+  content: "";
+  width: 6px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 45%;
+  right: 8px;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+}
+.p-floating::after {
+  content: "";
+  width: 6px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 55%;
+  right: 8px;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+}
+.p-floating_wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+@media screen and (min-width: 1025px) {
+  .p-floating_wrap {
+    padding: 24px 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*
+object/project/_about
+*/
+.p-about .c-text {
+  margin-top: 40px;
+}
+@media screen and (min-width: 541px) {
+  .p-about .c-text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-about_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.p-about_item {
+  margin-top: 40px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item {
+    margin-top: 64px;
+    width: 30%;
+  }
+}
+.p-about_item_heading {
+  color: #f08300;
+  font-size: 2.4rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item_heading {
+    font-size: 3.2rem;
+  }
+}
+.p-about_item_heading::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #f08300;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item_heading::after {
+    top: 64px;
+  }
+}
+.p-about_item .c-title {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item .c-title {
+    margin-top: 24px;
+    height: 84px;
+  }
+}
+.p-about_item .c-text {
+  margin-top: 24px;
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item .c-text {
+    height: 112px;
+    text-align: left;
+  }
+}
+.p-about_item_img {
+  display: block;
+  margin: 16px auto 0 auto;
+  width: 100%;
+}
+@media screen and (min-width: 541px) {
+  .p-about_item_img {
+    margin-top: 32px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-about_item_img {
+    margin-top: 32px;
+    width: 100%;
+  }
+}
+
+/*
+object/project/_flow
+*/
+.p-flow {
+  background-color: #fce6cc;
+}
+.p-flow .c-text {
+  margin-top: 40px;
+}
+@media screen and (min-width: 541px) {
+  .p-flow .c-text {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 541px) {
+  .p-flow_list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.p-flow_item {
+  padding: 32px 0;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  position: relative;
+}
+@media screen and (min-width: 541px) {
+  .p-flow_item {
+    padding: 40px 0 32px 0;
+    width: 48%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-flow_item {
+    padding: 48px 0 32px 0;
+    margin-top: 64px;
+    width: 24%;
+  }
+}
+.p-flow_item_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: -18px;
+  left: 0;
+}
+@media screen and (min-width: 541px) {
+  .p-flow_item_title {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.p-flow_item_title p {
+  margin-left: 16px;
+  color: #f08300;
+  font-size: 2rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 541px) {
+  .p-flow_item_title p {
+    font-size: 2.4rem;
+  }
+}
+.p-flow_item_img {
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+}
+.p-flow_item .c-text {
+  padding: 0 20px;
+  margin-top: 24px;
+}
+
+/*
+object/project/_faq
+*/
+.p-faq_list {
+  padding: 0 20px;
+  width: 100%;
+}
+@media screen and (min-width: 541px) {
+  .p-faq_list {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-faq_list {
+    padding: 0;
+  }
+}
+.p-faq_list_wrap {
+  margin: 40px -20px;
+}
+@media screen and (min-width: 541px) {
+  .p-faq_list_wrap {
+    margin: 64px -40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-faq_list_wrap {
+    margin: 64px 0;
+  }
+}
+.p-faq_list_wrap .c-title {
+  padding: 8px 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #f5a20a;
+}
+.p-faq_item {
+  margin: 16px auto;
+  border-bottom: 1px solid #f08300;
+  cursor: pointer;
+}
+.p-faq_item:first-child {
+  margin-top: 24px;
+}
+.p-faq_question {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+.p-faq_question span {
+  margin-right: 16px;
+  color: #f5a20a;
+  font-size: 3.2rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+.p-faq_question p {
+  width: 85%;
+}
+.p-faq_arrow {
+  width: 13.5px;
+  height: 13.5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (min-width: 541px) {
+  .p-faq_arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-faq_arrow {
+    width: 27px;
+    height: 27px;
+  }
+}
+.p-faq_arrow::before, .p-faq_arrow::after {
+  content: "";
+  width: 8px;
+  height: 1px;
+  background-color: #f08300;
+  position: absolute;
+  top: 50%;
+}
+@media screen and (min-width: 541px) {
+  .p-faq_arrow::before, .p-faq_arrow::after {
+    width: 12px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-faq_arrow::before, .p-faq_arrow::after {
+    width: 16px;
+  }
+}
+.p-faq_arrow::before {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+.p-faq_arrow::after {
+  right: 0;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+.p-faq_answer {
+  display: none;
+  margin-bottom: 16px;
+}
+.p-faq_answer p {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-faq_answer p span {
+  margin-right: 16px;
+  color: #ff4400;
+  font-size: 3.8rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+.p-faq_answer p .p-faq_link {
+  color: #ff4400;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+
+.js-arrow.down::before {
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+}
+.js-arrow.down::after {
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+}

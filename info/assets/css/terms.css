@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*
+foundation/_variables
+*/
+@font-face {
+  font-family: "Noto Sans JP", sans-serif;
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Bold.otf") format("opentype");
+  src: url("/font/Noto_Sans_JP/NotoSansJP-Regular.otf") format("opentype");
+}
+/*
+foundation/_mixin
+*/
+/*ブレイクポイント*/
+/* font-size rem */
+/*
+object/project/_terms
+*/
+.p-terms {
+  margin-top: 24px;
+  background-color: #fce6cc;
+}
+@media screen and (min-width: 1025px) {
+  .p-terms {
+    margin-top: 56px;
+  }
+}
+.p-terms .l-section_inner {
+  max-width: 1080px;
+}
+.p-terms .c-text {
+  margin-top: 40px;
+}
+.p-terms_section {
+  margin-top: 40px;
+}
+.p-terms_section_title {
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  border-bottom: 1px solid #f5a20a;
+  position: relative;
+}
+.p-terms_section_title::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  background-color: #f08300;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.p-terms_section .c-text {
+  padding-left: 24px;
+  margin-top: 16px;
+}
+.p-terms_section_intro {
+  padding-left: 0 !important;
+}
+.p-terms_section_number {
+  display: inline-block;
+  margin-left: -24px;
+  width: 24px;
+  text-align: right;
+}
+.p-terms_block {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f5c90a;
+}
+.p-terms_block:last-child {
+  border: none;
+}
+.p-terms_block_text {
+  padding-left: 48px;
+  margin-top: 16px;
+}
+.p-terms_block_number {
+  display: inline-block;
+  margin-left: -48px;
+  width: 48px;
+  text-align: right;
+}
